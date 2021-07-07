@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PickupBiz</title>
+    <script>
+        function theme1() {
+            document.getElementById("pickup").style.color = "red"
+            document.getElementById("biz").style.color = "blue"
+        }
+        function theme2() {
+            document.getElementById("pickup").style.color = "blue"
+            document.getElementById("biz").style.color = "yellow"
+        }
+        function theme3() {
+            document.getElementById("pickup").style.color = "black"
+            document.getElementById("biz").style.color = "green"
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1><span style="color:red ;" id="pickup">Pickup</span><span style="color: blue;" id="biz">Biz</span></h1>
+    <button onclick="theme1()">Theme 1</button>
+    <button onclick="theme2()">Theme 2</button>
+    <button onclick="theme3()">Theme 3</button>
+</body>
+</html>
