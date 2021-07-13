@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setfullname() {
+            var firstname = document.getElementById("firstname");
+            var midname = document.getElementById("midname");
+            var lastname = document.getElementById("lastname");
+            var fullname = document.getElementById("fullname")
+
+            fullname.value = firstname.value + " " + midname.value + " " + lastname.value
+        }
+        function clearme() {
+            var firstname = document.getElementById("firstname");
+            var midname = document.getElementById("midname");
+            var lastname = document.getElementById("lastname");
+            var clrfullname = document.getElementById("fullname");
+           clrfullname.value= " ";
+           firstname.value= null;
+           midname.value = null;
+           lastname.value = null;
+           
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 >Employee Details</h1><hr>
+    <h3>Personal Info</h3><hr>
+
+    <label> First Name:</label>
+    <input type="text" id="firstname"><br><br>
+    <label> Middle Name:</label>
+    <input type="text" id="midname" placeholder=""><br><br>
+    <label> Last Name</label>
+    <input type="text" id="lastname" placeholder="Your Last Name Here">
+    <input type="text">
+    <br><br>
+    <label>Full Name:</label>
+    <input type="text" id="fullname" disabled=true> <br> <br>
+    <button onclick="setfullname()">Click Me</button>
+    <button onclick="clearme()">Clear</button>
+    <ol type="">
+
+    </ol>
+    </ul>
+
+
+</body>
+
+</html>
