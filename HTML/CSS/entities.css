@@ -1,0 +1,36 @@
+.bdash {
+    border: 3px dashed black;
+}
+
+.bsolid {
+    border: 3px solid black;
+}
+
+.bdotted {
+    border: 3px dotted black;
+}
+
+.bdouble {
+    border: 3px double black;
+}
+
+.body{
+    background-image: url(../images/davisuko-5E5N49RWtbA-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.para1{
+    background-image: url(../images/pexels-tirachard-kumtanom-733857.jpg);
+    background-size: cover;
+    text-align: justify;
+    padding: 15px;
+}
+
+.para2{
+    background-image: url(../images/joanna-kosinska-1_CMoFsPfso-unsplash\ \(1\).jpg);
+    background-size: cover;
+    text-align: justify;
+    padding: 20px;
+
+}

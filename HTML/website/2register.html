@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PickupBiz | Registration</title>
+    <title>Registration</title>
 </head>
 <script>
     function setStoreValues() {
         var userValue = document.getElementById("name").value;
         var passwordValue = document.getElementById("password").value;
-        var colorValue = document.getElementById("colorPicker").value;
+    
 
         sessionStorage.setItem("userName", userValue);
         sessionStorage.setItem("password", passwordValue);
-        sessionStorage.setItem("color", colorValue);
+ 
     }
-
     function getStoreValues() {
         var userValue = document.getElementById("name").value;
         var passwordValue = document.getElementById("password").value;
 
         userValue = sessionStorage.getItem("userName");
         passwordValue = sessionStorage.getItem("password");
-        document.getElementById("colorPicker").value = sessionStorage.getItem("favColor");
-        document.getElementById("body").style = `background-color: ${sessionStorage.getItem("color")}`;
+     
     }
   
 </script>
@@ -69,9 +67,9 @@
     }
 
     body {
-        background-image: url(../images/pexels-lumn-399161.jpg);
+        background-image: url(../images/register.jpg);
         background-repeat: no-repeat;
-        background-size: 1550px 720px;
+        background-size: cover;
     }
 
     a:hover {
@@ -109,22 +107,15 @@
             <label>Date of Birth:</label>
             <br>
             <input type="date">
-            <br>
-            <label for="">Select Favourite Color: </label>
-            <br>
-            <input type="color" id="colorPicker"><br>
+            <br><br>
+          
             <button type="submit" onclick="setStoreValues()">Submit</button>
             <button type="reset">Clear</button>
         </b>
 
     </form>
-    <footer>
-        <iframe
 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.3535163834817!2d77.30915031473137!3d19.179755787028448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7446ed1ca83%3A0xf7aaaf09a7aadfe9!2sPickupBiz%20Learning%20Development%20Center!5e0!3m2!1sen!2sin!4v1625813776048!5m2!1sen!2sin"
-            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        
-    </footer>
+   
 </body>
 <script>
      getStoreValues();

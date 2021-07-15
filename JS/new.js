@@ -1,0 +1,2 @@
+a = "fjbdsjvhb";
+typeof a;
