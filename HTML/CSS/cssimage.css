@@ -1,0 +1,22 @@
+img{
+    width: 300px;
+    height: 200px;
+    
+}
+.image{
+    display: inline-block;
+    padding: 10px;
+}
+
+.image1:hover{
+    transform:rotate(20deg);
+}
+.image2:hover{
+    transform:rotate(40deg);
+}
+.image3:hover{
+    transform:rotate(60deg);
+}
+.image4:hover{
+    transform: ;
+}
