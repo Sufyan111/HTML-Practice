@@ -1,0 +1,18 @@
+h2{
+    background-color:rgba(128, 101, 179, 0.37);
+    /* border: 0.5px solid black; */
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+div{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;   
+}
